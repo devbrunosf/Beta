@@ -506,83 +506,50 @@ header {
     }
 }
 
-.copia {
-    @include size(100vw, 100vh);
-    overflow: hidden;
-    .container {
-        @include size(100vw, 100%);
-        @include color(#eee, $green, null);
-        @include display(flex, row, space-evenly, center);
-        div {
-            @include size(40%, auto);
-            @include display(flex, column, center, center);
-            h1 {
-                @include font("Prompt", calc(1.1em + 1vw), 500);
-                margin-bottom: 15px;
-            }
-            p:nth-child(2) {
-                @include display(flex, row, center, center);
-                flex-wrap: wrap;
-                span {
-                    @include size(auto, auto);
-                    @include color(#328574, #eee, null);
-                    border-radius: 5px;
-                    padding: 10px 20px;
-                    margin: 10px 5px;
-                    text-align: center;
-                    @include font("Prompt", calc(0.6em + 1vw), 500);
-                    letter-spacing: 3px;
-                    a {
-                        @include color(transparent, #eee, null);
-                    }
-                }
-            }
-            p:nth-child(3) {
-                @include display(flex, row, center, center);
-                flex-wrap: wrap;
-                margin-bottom: 25px;
-                span {
-                    @include size(auto, auto);
-                    @include color(#2c8560, #eee, null);
-                    border-radius: 5px;
-                    padding: 10px 20px;
-                    margin: 10px 5px;
-                    text-align: center;
-                    @include font("Prompt", calc(0.6em + 1vw), 500);
-                    letter-spacing: 3px;
-                    a {
-                        @include color(transparent, #eee, null);
-                    }
-                }
-            }
-        }
-    }
-}
-
-.step2 {
-    @include size(100vw, 100vh);
+.portfolio {
+    @include size(100vw, auto);
     overflow: hidden;
     .container {
         @include size(100vw, 100%);
         @include color($green, #fff, null);
         @include display(flex, row, center, center);
-        div {
-            @include size(40%, 100%);
-            @include color($green, #fff, null);
-            @include display(flex, column, center, flex-start);
+        padding: 150px 20px;
+        overflow: hidden;
+        .cards {
+            @include size(100%, 100%);
+            @include display(flex, row, center, center);
+            column-gap: 30px;
+            row-gap: 50px;
+            flex-wrap: wrap;
             transition: 0.5s;
-            span {
-                @include size(100%, auto);
-                @include font("Prompt", calc(0.8em + 1vw), 500);
-                margin-bottom: 10px;
-            }
-            ul {
-                li {
-                    @include font("Prompt", calc(0.9em + 1vw), 500);
-                    list-style: inside decimal-leading-zero;
+
+            .card {
+                @include size(500px, 400px);
+                @include color(#eee, $green, null);
+                @include display(flex, column, center, center);
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                border: 1px solid #fff;
+                position: relative;
+
+                figure {
+                    @include size(100%, 300px);
+
+                    img {
+                        @include size(100%, 100%);
+                    }
+                }
+
+                p {
+                    @include size(100%, 100px);
+                    @include display(flex, column, center, center);
+                    @include color(rgba(255, 255, 255, 0.8), #333, null);
+                    @include font("poppins", 15px, 500);
+                    text-align: center;
                     a {
-                        color: #fff;
-                        padding-left: 5px;
+                        @include font("poppins", 17px, 700);
+                        color: $green;
+                        margin-top: 15px;
+                        border-bottom: 1px solid;
                     }
                 }
             }
@@ -590,7 +557,7 @@ header {
     }
 }
 
-.step3 {
+.contato {
     @include size(100vw, 100vh);
     @include display(flex, row, center, center);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/pexels-photo-2330137.webp);
