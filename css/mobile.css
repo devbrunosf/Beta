@@ -143,6 +143,14 @@
     letter-spacing: 7px;
     margin-top: 25px;
   }
+  .portfolio .container .cards .card figure {
+    width: 100%;
+    height: 180px;
+  }
+  .portfolio .container .cards .card figure img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 375px) {

@@ -162,6 +162,21 @@ $green: #328574;
             }
         }
     }
+
+    .portfolio {
+        .container {
+            .cards {
+                .card {
+                    figure {
+                        @include size(100%, 180px);
+                        img {
+                            @include size(100%, 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 375px) {

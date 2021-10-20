@@ -519,15 +519,15 @@ header {
             transition: 0.5s;
 
             .card {
-                @include size(500px, 400px);
-                @include color(#eee, $green, null);
-                @include display(flex, column, center, center);
+                @include size(500px, auto);
+                @include color(#fff, $green, null);
+                @include display(flex, column, flex-start, center);
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
                 border: 1px solid #fff;
                 position: relative;
 
                 figure {
-                    @include size(100%, 290px);
+                    @include size(100%, 265px);
 
                     img {
                         @include size(100%, 100%);
@@ -666,23 +666,6 @@ header {
         }
     }
 }
-
-// footer {
-//     @include size(100vw, auto);
-//     min-height: 100px;
-//     @include display(flex, row, space-between, center);
-//     @include color($green, #fff, null);
-//     padding: 10px 30px;
-//     flex-wrap: wrap;
-//     overflow: hidden;
-//     div {
-//         @include size(auto, auto);
-//         p {
-//             @include font("poppins", 1rem, 600);
-//             letter-spacing: 1px;
-//         }
-//     }
-// }
 
 .next {
     @include size(100vw, 100vh);
