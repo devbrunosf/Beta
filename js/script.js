@@ -9,7 +9,7 @@ window.setTimeout(function() {
     const sobre = document.querySelector('.curriculo');
     const posicaoSobre = sobre.getBoundingClientRect();
     // Pegando a posicao.y do step3 (Contato)...
-    const contato = document.querySelector('.step3');
+    const contato = document.querySelector('.contato');
     const posicaoContato = contato.getBoundingClientRect();
 
     // Voltar ao topo clicando no #logo...
@@ -36,7 +36,7 @@ window.setTimeout(function() {
         window.scroll(0, posicaoSobre.y, behavior = 'smooth');
     });
 
-    // Scroll da página até o .step3 (Contato)...
+    // Scroll da página até o .contato (Contato)...
     const moveContato = document.querySelector('.moveContato');
     moveContato.addEventListener("click", function(event) {
         event.preventDefault;
@@ -77,7 +77,7 @@ window.setTimeout(function() {
             inicio.style.transition = '.5s';
         }
 
-        const contato = document.querySelector('.step3');
+        const contato = document.querySelector('.contato');
         const posicaoContato = contato.getBoundingClientRect();
 
         if (posicaoContato.y < 25) {
@@ -134,7 +134,7 @@ window.setTimeout(function() {
             span4.style.transition = '.5s';
         }
 
-        const step3 = document.querySelector('.step3');
+        const step3 = document.querySelector('.contato');
         const h1 = step3.children[0].children[0].children[0];
         const p1 = step3.children[0].children[0].children[1];
         const p2 = step3.children[0].children[0].children[2];

@@ -33,7 +33,6 @@
 
 $green: #328574;
 
-// Adapta .step1 e .curriculo a tela, além de abrir menu hamburguer...
 @media only screen and (max-width: 768px) {
     header {
         padding: 0px 25px;
@@ -142,7 +141,6 @@ $green: #328574;
     }
 }
 
-// Re-adapta somente o .step1...
 @media only screen and (max-width: 465px) {
     .step1 {
         .container {
@@ -166,7 +164,6 @@ $green: #328574;
     }
 }
 
-// Re-adapta o .step1 e .curriculo...
 @media only screen and (max-width: 375px) {
     .step1 {
         .container {
@@ -222,7 +219,6 @@ $green: #328574;
     }
 }
 
-// Diminui Formulário e aumenta página .next...
 @media only screen and (max-width: 425px) {
     .step3 {
         .container {

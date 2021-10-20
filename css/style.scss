@@ -511,7 +511,7 @@ header {
     overflow: hidden;
     .container {
         @include size(100vw, 100%);
-        @include color($green, #fff, null);
+        @include color(#fff, #fff, null);
         @include display(flex, row, center, center);
         padding: 150px 20px;
         overflow: hidden;
@@ -542,7 +542,7 @@ header {
                 p {
                     @include size(100%, 100px);
                     @include display(flex, column, center, center);
-                    @include color(rgba(255, 255, 255, 0.8), #333, null);
+                    @include color(rgba(255, 255, 255, 0.7), #333, null);
                     @include font("poppins", 15px, 500);
                     text-align: center;
                     a {
@@ -672,22 +672,22 @@ header {
     }
 }
 
-footer {
-    @include size(100vw, auto);
-    min-height: 100px;
-    @include display(flex, row, space-between, center);
-    @include color($green, #fff, null);
-    padding: 10px 30px;
-    flex-wrap: wrap;
-    overflow: hidden;
-    div {
-        @include size(auto, auto);
-        p {
-            @include font("poppins", 1rem, 600);
-            letter-spacing: 1px;
-        }
-    }
-}
+// footer {
+//     @include size(100vw, auto);
+//     min-height: 100px;
+//     @include display(flex, row, space-between, center);
+//     @include color($green, #fff, null);
+//     padding: 10px 30px;
+//     flex-wrap: wrap;
+//     overflow: hidden;
+//     div {
+//         @include size(auto, auto);
+//         p {
+//             @include font("poppins", 1rem, 600);
+//             letter-spacing: 1px;
+//         }
+//     }
+// }
 
 .next {
     @include size(100vw, 100vh);
